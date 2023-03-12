@@ -8,7 +8,8 @@ with open("library.json") as f:
 pairs = [
     [
         r"what is starbeamone?",
-        ["Starbeam.one is a digital marketplace that enables creators to issue and sell digital assets, including music, videos, images, and software. It allows artists to promote and sell their work directly to consumers, and allows consumers to purchase and collect unique and valuable digital assets. The platform is designed to provide a secure and decentralized marketplace, with blockchain technology used to ensure transparency, immutability, and authenticity of all transactions. Additionally, the platform features an AI-powered chatbot named A.L.I.C.E, who serves as a guide and a helpful resource for users navigating the platform."]
+        [
+            "Starbeam.one is a digital marketplace that enables creators to issue and sell digital assets, including music, videos, images, and software. It allows artists to promote and sell their work directly to consumers, and allows consumers to purchase and collect unique and valuable digital assets. The platform is designed to provide a secure and decentralized marketplace, with blockchain technology used to ensure transparency, immutability, and authenticity of all transactions. Additionally, the platform features an AI-powered chatbot named A.L.I.C.E, who serves as a guide and a helpful resource for users navigating the platform."]
     ],
     [
         r"how are you",
@@ -20,13 +21,14 @@ pairs = [
     ],
     [
         r"features",
-        [", ".join(library["features"])]
+        [", ".join(library.get("features", []))]
     ],
     [
         r"target audience",
-        ["Our target audience includes: " + ", ".join(library["target_audience"])]
+        ["Our target audience includes: " + ", ".join(library.get("target_audience", []))]
     ]
 ]
+
 
 def main():
     print("A.L.I.C.E: Hi, I'm A.L.I.C.E. How can I help you today?")
@@ -34,9 +36,16 @@ def main():
     chatbot = Chat(pairs, reflections)
     while True:
         user_input = input("You: ")
+        if not user_input:
+            print("Available questions:")
+            for pair in pairs:
+                print(f"Question: {pair[0]}")
+            continue
+
         response = chatbot.respond(user_input)
 
         print("A.L.I.C.E:", response)
+
 
 if __name__ == "__main__":
     main()
