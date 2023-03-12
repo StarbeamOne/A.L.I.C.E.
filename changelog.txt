@@ -1,0 +1,9 @@
+Changelog for A.L.I.C.E chatbot:
+
+Version 1.0:
+- Initial version of the chatbot with predefined pairs of inputs and responses.
+
+Version 1.1:
+- Added a `library.json` file to define pairs of inputs and responses.
+- Added a new pair to respond to user inputs about Starbeam One.
+- Started the `changelog.txt` file to keep track of changes to the chatbot.
