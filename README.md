@@ -1,5 +1,5 @@
 #A.L.I.C.E
-A.L.I.C.E
+
 A.L.I.C.E stands for Artistic Lifeform Incorporating Creative Exploration, and she is a chatbot designed to be the voice of all art posted on Starbeam One, a centralized digital ownership marketplace for creators to sell Resalable Digital Licenses (RDLs) to their work.
 
 About A.L.I.C.E
