@@ -1,9 +1,27 @@
-Changelog for A.L.I.C.E chatbot:
+mproved library.json formatting for readability
+Added description and name fields to library.json
+Character count: 684
+v3.0
 
-Version 1.0:
-- Initial version of the chatbot with predefined pairs of inputs and responses.
+Added ability for users to input any question
+Added welcome message with Alice's name
+Character count: 951
+v3.1
 
-Version 1.1:
-- Added a `library.json` file to define pairs of inputs and responses.
-- Added a new pair to respond to user inputs about Starbeam One.
-- Started the `changelog.txt` file to keep track of changes to the chatbot.
+Added option for users to select from a numbered list of questions
+Added "does not compute silly" response for invalid user input
+Character count: 1167
+v3.2
+
+Fixed bug with numbered list option not displaying correctly
+Character count: 1182
+v3.3
+
+Reverted to original behavior of allowing users to input any question or select from a numbered list
+Fixed bug with Alice not displaying responses
+Added character count to changelog
+Character count: 1176
+
+
+
+
