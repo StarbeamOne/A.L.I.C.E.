@@ -1,4 +1,18 @@
-mproved library.json formatting for readability
+Changelog:
+
+v1.0 (initial release)
+
+Basic chatbot functionality
+Hardcoded responses
+Character count: 288
+v2.0
+
+Added reflection pairs for improved conversational flow
+Moved responses to library.json file
+Character count: 530
+v2.1
+
+Improved library.json formatting for readability
 Added description and name fields to library.json
 Character count: 684
 v3.0
@@ -21,7 +35,3 @@ Reverted to original behavior of allowing users to input any question or select 
 Fixed bug with Alice not displaying responses
 Added character count to changelog
 Character count: 1176
-
-
-
-
